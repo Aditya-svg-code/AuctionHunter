@@ -1,0 +1,19 @@
+{
+  "name": "mern_stack_auction_platform-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd frontend && npm run dev",
+    "server": "cd backend && npm start",
+    "serverDev":"cd backend && npm run dev",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "startDev":"concurrently \"npm run serverDev\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
